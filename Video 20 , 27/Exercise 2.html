@@ -1,0 +1,39 @@
+<!-- Exercise 2.0 -->
+<!-- Q.2 Write html and css code to style a paragraghs inside a div which contains 5 other paragraghs. The first paragragh must have background color yellow and text color red . The other paragraphs mush have backaround color blue and text color white. The HTML is written below for your reference. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise2.0</title>
+    <style>
+      p {
+        color: blue;
+        background-color: white;
+      }
+
+      div p:first-child {
+        /* div p:nth-child(2){ */
+        color: red;
+        background-color: yellow;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores odio
+        sequi saepe, beatae accusantium fuga quia obcaecati sint, unde
+        voluptates earum architecto, praesentium excepturi repudiandae inventore
+        dolorem ut harum tempora?
+      </p>
+      <p>Hello Sparsh</p>
+      <p>Hello Nishu</p>
+      <p>Hello Unique</p>
+      <p>Hello Aditi</p>
+      <p>Hello Tanisha</p>
+    </div>
+  </body>
+</html>

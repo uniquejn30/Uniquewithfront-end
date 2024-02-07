@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+    <style>
+        /* Element Selector */
+        /* div{
+            background-color: red;
+        } */
+
+        /* Class Selector */
+        .red{
+          background-color: red;
+        }
+
+        /* ID Selector */
+        #green{
+            background-color: green;
+        }
+
+        /* child selector  */
+        div > p {
+            color: violet ;
+            background-color: black;
+        }
+
+        /* descendant selector for using in child ka bhi child  */
+        div p {
+            color: green ;
+            background-color: red;
+        }
+
+        /* Universal Selector */
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color: yellow;
+        }
+        a:link{
+            color: green;
+        }
+        
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: yellow;
+        }
+
+      p:first-child{
+        background-color: aqua;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <main class = "One"> 
+       <p> I am One</p>
+       <p> I am Second</p>
+    </main>
+    <div class = "red">
+        I am a Unique
+        <article> 
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime minima laudantium deleniti nobis eligendi ex pariatur fugiat. Modi porro commodi harum voluptatibus nam! Harum beatae reprehenderit facilis qui rem dignissimos.
+        </p>
+    </article>
+    </div>
+    <div id="green">
+        Hello Unique Jain
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime minima laudantium deleniti nobis eligendi ex pariatur fugiat. Modi porro commodi harum voluptatibus nam! Harum beatae reprehenderit facilis qui rem dignissimos.
+        </p>
+    </div>
+    <div>
+        <a href="https://www.google.com">GO to Google</a>
+        <a href="https://www.facebook2.com">GO to Facebook</a>
+    </div>
+  </body>
+</html>

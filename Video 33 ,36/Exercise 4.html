@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 4.0:- CSS MultiColor Website</title>
+    <style>
+        /* Import font :- Poppins */
+         @import url("https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&family=Poppins:wght@300;700&display=swap");
+
+         /* :root{
+            --primary-color: #ad5afacc;
+            --text-color: white ;
+            --secondary-color: #e3cff5cc;
+         } */
+
+         :root{
+            --primary-color: rgba(62, 103, 236, 0.8);
+            --text-color: rgb(0, 0, 0) ;
+            --secondary-color: #320c54cc;
+         }
+
+         body{
+            background-color: var(--secondary-color);
+         }
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppind', sans-serif;
+        }
+
+
+        nav{
+          background-color: var(--primary-color);
+          padding: 12px 0px;
+        }
+
+      ul li{
+        list-style: none;
+        /* Because we are not using flex box */
+        display: inline;
+        padding: 23px;
+        font-weight: bolder;
+        /* color: var(--text-color); */
+      }
+
+      ul li a{
+        color: var(--text-color);
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- If you see this , comment "Bhupendra Jogi" in the comment. He is my friend who has visited a lot of places in US. -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+  </body>
+</html>

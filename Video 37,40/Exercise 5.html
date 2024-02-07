@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 5 :- Layouts</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        position: sticky;
+        top: 0;
+      }
+
+      nav {
+        background-color: pink;
+        height: 83px;
+      }
+
+      main {
+        background-color: lightcoral;
+        color: black;
+        padding: 34px;
+      }
+
+      .container {
+        background-color: rebeccapurple;
+        margin: 12px 34px;
+        padding: 75px 23px;
+        text-align: center;
+      }
+
+      .box1 {
+        background-color: pink;
+        height: 50vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0px 12px;
+      }
+
+      .box2 {
+        background-color: aquamarine;
+        height: 50vh;
+        width: 45%;
+        display: inline-block;
+        margin: 0px 12px;
+      }
+
+      .text-box {
+        padding: 34px;
+        border: 10px solid black;
+        margin: 50px 30vw;
+        font-size: 60px;
+        border-radius: 20px;
+      }
+
+      footer {
+        height: 10vh;
+        background-color: lightblue;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .chatbot {
+        height: 32px;
+        width: 32px;
+        position: fixed;
+        background-color: chocolate;
+        bottom: 12px;
+        right: 23px;
+        border-radius: 60px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav></nav>
+    </header>
+    <main>
+      <div class="container">
+        <div class="box1"></div>
+        <div class="box2"></div>
+      </div>
+
+      <div class="text-box">
+        <p>Welcome to epicsolution invites!!</p>
+      </div>
+
+      <div class="chatbot"></div>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
