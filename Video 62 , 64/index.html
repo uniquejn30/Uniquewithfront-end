@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise 10 :- Business Name Generator </title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <script>
+        let rand = Math.random()
+        let first , second , third;
+        // Let grnerate first word :- 
+        if(rand < 0.33){
+            first = "Crazy"
+            // that's why we choose this :-  0 0.33 0.66 0.100(1)
+        }
+
+        else if(rand < 0.66 && rand>=0.33 ) {
+             first = "Amazing"
+        }
+
+        else{
+            first = "Fire"
+        }
+
+        // Let grnerate second word :- 
+        rand = Math.random()
+        if(rand < 0.33){
+            second = "Engine"
+            // that's why we choose this :-  0 0.33 0.66 0.100(1)
+        }
+
+        else if(rand < 0.66 && rand>=0.33 ) {
+             second = "Food"
+        }
+
+        else{
+            second = "Garments"
+        }
+
+        // Let grnerate Third word :- 
+        rand = Math.random()
+        if(rand < 0.33){
+            third = "Bros"
+            // that's why we choose this :-  0 0.33 0.66 0.100(1)
+        }
+
+        else if(rand < 0.66 && rand>=0.33 ) {
+             third = "Limited"
+        }
+
+        else{
+            third = "Hub"
+        }
+
+        console.log(`${first} ${second} ${third}`)
+    </script>
+</body>
+</html>
